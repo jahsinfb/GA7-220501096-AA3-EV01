@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/10/2023 07:53:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Configuracion.Clientes" table="clientes" catalog="prueba" optimistic-lock="version">
+        <id name="idCliente" type="int">
+            <column name="id_cliente" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" />
+        </property>
+        <property name="apellido1" type="string">
+            <column name="apellido1" length="45" />
+        </property>
+        <property name="apellido2" type="string">
+            <column name="apellido2" length="45" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
